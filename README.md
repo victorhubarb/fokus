@@ -29,16 +29,16 @@ This project is inspired by the Pomodoro Technique, which aims to focus on impor
 Project requirements:
  - Have your preferred IDE installed on your computer.
 
-Access the project hosted [here](https://apeperia-one-blue.vercel.app) and have fun:
+Access the project hosted [here](https://fokus-jet.vercel.app) and have fun:
  - Project hosted on Vercel.
- - Easy implementation, [click](https://apeperia-one-blue.vercel.app) and enter the project, try it out easily and quickly without needing to download the files to your own computer.
+ - Easy implementation, [click](https://fokus-jet.vercel.app) and enter the project, try it out easily and quickly without needing to download the files to your own computer.
 
 Have the code on your computer:
- - Access the project source code [here](https://github.com/victorhubarb/apeperia) or download the project [here](https://github.com/victorhubarb/apeperia/archive/refs/heads/main.zip). After one of these steps, and also unzip it on your computer in case of download, open the project in your preferred IDE.
+ - Access the project source code [here](https://github.com/victorhubarb/fokus) or download the project [here](https://github.com/victorhubarb/fokus/archive/refs/heads/main.zip). After one of these steps, and also unzip it on your computer in case of download, open the project in your preferred IDE.
 
 Clone repository with the following steps:
  1. Open the terminal
- 2. git clone https://github.com/victorhubarb/apeperia.git
+ 2. git clone https://github.com/victorhubarb/fokus.git
  3. Press ENTER to create your clone
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
