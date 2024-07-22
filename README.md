@@ -12,34 +12,49 @@
 * [Project Developers](#project-developers)
 
 ## Project Description
-This project is inspired by the Pomodoro Technique, which aims to focus on important tasks. Thus, we concentrate on an activity for 25 minutes, for example, and after that period, it's possible to take a 5-minute break or opt for a longer 15-minute break. It's a simple and interactive web application that allows users to add, edit, view, and remove tasks, all in a visually pleasing and user-friendly environment.
+Fokus is a task management tool that integrates a Pomodoro timer to enhance productivity and focus. Built using HTML, CSS, and JavaScript, Fokus is designed to help users manage their tasks efficiently while encouraging them to take regular breaks using the Pomodoro technique. The interface is clean and user-friendly, featuring a dynamic timer, customizable task lists, and soothing background music options to create a conducive work environment.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
  
 ## Features and Application Demonstration
-- `Feature 1`: Adding Tasks: A magic button reveals a form where you can write and add new tasks.
-- `Feature 2`: Editing Tasks: Click on an edit button, and voilà, you can change the task description.
-- `Feature 3`: Viewing Tasks: The added tasks are all there, beautifully organized, waiting for your attention.
-- `Feature 4`: Marking Tasks as Complete: When a task is completed, it changes its appearance.
-- `Feature 5`: Removing Tasks: Be selective and remove only completed tasks, or throw everything away and start again with a clean task list.
-- `Feature 6`: LocalStorage: We rehearse the dance of storing and retrieving data using LocalStorage, keeping our tasks safe and accessible even after the browser is closed.
-- `Feature 7`: Manipulating sounds and synchronizing them with the start, pause, and end of the timer.
+- **Dynamic Pomodoro Timer**: Includes a digital countdown timer with three selectable modes: Focus, Short Break, and Long Break. Each mode adjusts the timer and changes the interface color, text, and background image to reflect the selected mode.
+  - **Focus Mode**: Sets the timer to 30 minutes for concentrated work sessions.
+  - **Short Break Mode**: Sets the timer to 5 minutes, allowing for brief pauses.
+  - **Long Break Mode**: Sets the timer to 15 minutes for extended downtime.
+  
+- **Background Music Toggle**: Users can choose to play or stop background music to enhance their focus or relaxation during the timer sessions.
+
+- **Task Management**:
+  - **Persistent Task List**: Tasks are stored in the browser's localStorage, ensuring that user data remains intact even after the browser is closed. Users can continue where they left off without losing their task progress.
+  - **Task List Creation**: Users can add tasks to an "In Progress" list, which helps track current activities aligned with the Pomodoro sessions.
+  - **Editable Tasks**: Tasks can be edited on the fly with an inline editing feature, enabling users to update task descriptions easily.
+  - **Task List Options**: Features options to clear completed tasks or all tasks from the list, aiding in list management and organization.
+  
+- **Interactive Task Entry**: Adding a new task transforms the button into a text input field with options to delete, cancel, or save the task. Saved tasks are added to the task list and can be marked as in progress.
+  
+- **Responsive Design**: Ensures that Fokus is fully functional and visually appealing on various devices, adapting to different screen sizes for optimal user experience.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Project Access
-Project requirements:
- - Have your preferred IDE installed on your computer.
 
-Access the project hosted [here](https://fokus-jet.vercel.app) and have fun:
- - Project hosted on Vercel.
- - Easy implementation, [click](https://fokus-jet.vercel.app) and enter the project, try it out easily and quickly without needing to download the files to your own computer.
+### Prerequisites
+- **Integrated Development Environment (IDE)**: Ensure you have your preferred IDE installed, such as Visual Studio Code, to manage and edit the project files.
 
-Have the code on your computer:
- - Access the project source code [here](https://github.com/victorhubarb/fokus) or download the project [here](https://github.com/victorhubarb/fokus/archive/refs/heads/main.zip). After one of these steps, and also unzip it on your computer in case of download, open the project in your preferred IDE.
+### Online Access
+- **Live Demo**: Experience Fokus directly through its hosted version on Vercel:
+  - [Visit Fokus](https://fokus-jet.vercel.app) to explore the platform's features and interface without any setup.
 
-Clone repository with the following steps:
- 1. Open the terminal
- 2. git clone https://github.com/victorhubarb/fokus.git
- 3. Press ENTER to create your clone
+### Local Setup
+- **Access and Download the Source Code**:
+  - View the [Fokus GitHub repository](https://github.com/victorhubarb/fokus) to access the source code.
+  - To download the project directly, [click here](https://github.com/victorhubarb/fokus/archive/refs/heads/main.zip), unzip the file after download, and open it in your IDE.
+
+- **Clone the Repository**:
+  ```bash
+  # Open your terminal
+  git clone https://github.com/victorhubarb/fokus.git
+  cd fokus
+  
+  # Now you are ready to work on the project locally.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Technologies Used
