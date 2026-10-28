@@ -1,47 +1,46 @@
-# Fokus <a name="readme-top"></a>
-![Static Badge](https://img.shields.io/badge/status-completed-green?style=for-the-badge)
+# Fokus
 
-## Introduction
-**Fokus** is a task management tool that integrates a Pomodoro timer to increase productivity and focus. Built with HTML, CSS, and JavaScript, the application allows users to manage their tasks efficiently by encouraging regular breaks using the Pomodoro technique. The interface is user-friendly, featuring a dynamic timer, customizable to-do lists, and background music options to create a work-friendly environment.
+A Pomodoro timer with a task list, written in plain HTML, CSS and JavaScript. Pick a task, run a focus session, and when the timer ends the task is marked as done. Tasks are saved in the browser, so they are still there after a reload.
 
-## Live Application
-[Fokus Demonstration](https://fokus-jet.vercel.app)
+**Live demo:** [fokus-jet.vercel.app](https://fokus-jet.vercel.app)
 
-## Table of Contents
-- [Installation](#installation)
-- [Usage](#usage)
-- [Features](#features)
-- [Technologies](#technologies)
-- [Contributors](#contributors)
+## What it does
 
-## Installation
+- **Three timer modes.** Focus (30 minutes), short break (5) and long break (15). Switching mode changes the time, the page theme (through a `data-contexto` attribute on `<html>` that the CSS reads), the illustration and the headline.
+- **Start and pause** with sound cues, and an optional looping background track you can toggle.
+- **Task list.** Add tasks, click one to make it the active task, and rename it with the edit button. Everything is stored in `localStorage` and loaded back on startup.
+- **Finishing a session.** When a focus timer reaches zero, the script dispatches a custom `FocoFinalizado` event on `document`. The task code listens for it and marks the active task as complete, which keeps the timer in `script.js` and the tasks in `script-crud.js` separate.
+- **Cleanup.** Buttons remove only completed tasks or all of them.
 
-### Prerequisites
-- A code editor like Visual Studio Code
-- Web browser
+The interface is in Portuguese.
 
-### Steps to run
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/victorhubarb/fokus.git
-   cd fokus
-   ```
-2. Open the `index.html` file in your browser to start the application.
+## Run it
 
-## Usage
-Fokus offers a dynamic Pomodoro timer with three selectable modes (Focus, Short Break, and Long Break), which adjusts the time and changes the interface depending on the mode selected. Users can also create and manage to-do lists, add or edit ongoing tasks, and choose from background music to enhance concentration.
+Asset paths start with `/` (for example `/imagens/...` and `/sons/...`), so the page has to be served from a web root. Opening `index.html` directly from disk will not find the images and sounds.
 
-## Features
-- **Dynamic Pomodoro Timer**: Countdown with Focus, Short Break, and Long Break modes.
-- **Task Management**: Create to-do lists with persistent storage in the browser.
-- **Customizable Focus Mode**: Choose background music to help you concentrate.
-- **Responsive Design**: Interface that adapts to different screen sizes.
+```bash
+git clone https://github.com/victorhubarb/fokus.git
+cd fokus
+python3 -m http.server 8000     # then open http://localhost:8000
+```
 
-## Technologies
-- **HTML5**
-- **CSS3**
-- **JavaScript**
+## Project structure
 
-## Contributors
-- [Victor Barbosa](https://github.com/victorhubarb)
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+```
+index.html
+script.js        Timer, modes, audio
+script-crud.js   Task list and localStorage
+styles.css
+imagens/, sons/
+```
+
+## Known gaps
+
+- Changing the mode while the timer is running does not stop the countdown.
+- The end of a session uses `alert()`.
+- Renaming a task uses `prompt()`, and there is no way to delete a single task, only completed ones or all of them.
+- Only one breakpoint set of responsive rules, so very small screens are not tuned.
+
+---
+
+Victor Hugo Barbosa · [GitHub](https://github.com/victorhubarb) · [LinkedIn](https://www.linkedin.com/in/victorhbarbosa/)
